@@ -1,0 +1,23 @@
+﻿<div class="jumbotron">
+    <h1>AutoMapper in Web API</h1>
+    <p class="lead">An example of AutoMapper configuration and usage in a Web API project.</p>
+    @*<p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>*@
+</div>
+<div class="row">
+    <div class="col-md-4">
+        <h2>About this project</h2>
+        <p>If your ASP.NET MVC web apps course began in January 2017 or later, then you already know how to configure and use AutoMapper.</p>
+        <p>If not, then this example will show you what's new.</p>
+    </div>
+    <div class="col-md-4">
+        <h2>Old way</h2>
+        <p>In the past, we used an AutoMapperConfig.cs source code file (static AutoMapperConfig class), located in the App_Start folder. It defined and created mappers that were used in the app in a RegisterMappings() static method.</p>
+        <p>The method was called when the app started, with a statement in the the WebApiApplication class (in the Global.asax.cs source code file), resulting in a global static object, "Mapper".</p>
+        <p>Then, a mapping task was done with the (upper-case) <code>&nbsp;<u>M</u>apper.Map&lt;T&gt;()&nbsp;</code> method.)</p>
+    </div>
+    <div class="col-md-4">
+        <h2>New way</h2>
+        <p>Now, it's all done in the Manager.cs source code file (Manager class). An AutoMapper configuration object is defined, and in the class constructor, an instance of the mapper is defined and created.</p>
+        <p>Usage is much the same as before, except we always use this lower-case <code>&nbsp;<u>m</u>apper.Map&lt;T&gt;()&nbsp;</code> to do the mapping task.</p>
+    </div>
+</div>
