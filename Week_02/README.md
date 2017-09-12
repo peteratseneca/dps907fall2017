@@ -28,5 +28,7 @@ Use Fiddler as the client/requestor when you're debugging.
 ### AssociationsIntro
 
 Shows how to fetch associated data.  
+Works with Customer and Employee entities.  
+Attribute routing enables URLs to fetch a customer, or a customer with its associated "support rep" employee object.  
 
 <br>
