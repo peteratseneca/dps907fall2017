@@ -11,7 +11,7 @@ Includes a sample database with many tables and hundreds of data rows, and:
 * AutoMapper
 * Manager class
 
-Copy the zip file to the following folder. Do NOT un-zip the file - leave it as-is:  
-`%userprofile%\Documents\Visual Studio 2015\Templates\ProjectTemplates\Visual C#\Web`
+Copy the zip file to the following folder. Do NOT unzip the file - leave it as-is:  
+`%userprofile%\Documents\Visual Studio 2017\Templates\ProjectTemplates\Visual C#\Web`
 
 <br>
