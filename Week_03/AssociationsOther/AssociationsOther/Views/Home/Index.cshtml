@@ -1,0 +1,25 @@
+﻿<div class="jumbotron">
+    <h1>Associations other</h1>
+    <p class="lead">Shows how to work with many-to-many, one-to-one, and self-referencing associations. Also, the command pattern is introduced.</p>
+    <p><a href="https://petermcintyre.com/dps907/notes/sep21/" class="btn btn-primary btn-lg" target="_blank">More info &raquo;</a></p>
+</div>
+<div class="row">
+    <div class="col-md-4">
+        <h2>Getting started</h2>
+        <p>First, look at the class diagram in the Models folder, to become familiar with the app's data model.</p>
+        <p>Then, interact with the web server, using Fiddler. We have included some sample data in the EntityBodyData.js source code file.</p>
+        <p>Study the employees controller, and the methods that implement the command pattern.</p>
+    </div>
+    <div class="col-md-4">
+        <h2>Resource URIs</h2>
+        <p>/api/employees</p>
+        <ul>
+            <li>/api/employees/5/setsupervisor</li>
+            <li>/api/employees/5/clearsupervisor</li>
+            <li>/api/employees/5/setjobduty</li>
+            <li>/api/employees/5/clearjobduty</li>
+        </ul>
+        <p>/api/addresses</p>
+        <p>/api/jobduties</p>
+    </div>
+</div>
