@@ -1,5 +1,7 @@
 ### DPS907 and WSA500 for the Fall 2017 semester
 
+<br>
+
 **Code examples**
 
 Organized by week. Each "week" page has a README file that describes the examples.
