@@ -1,0 +1,112 @@
+﻿@model IEnumerable<AssociationsIntro.Controllers.EmployeeBase>
+
+@{
+    ViewBag.Title = "Employees";
+}
+
+<h2>List of employees</h2>
+
+<p>@*@Html.ActionLink("Create New", "Create")*@</p>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.LastName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FirstName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Title)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.BirthDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.HireDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Address)
+        </th>
+        @*<th>
+                @Html.DisplayNameFor(model => model.City)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.State)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Country)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PostalCode)
+            </th>*@
+        <th>
+            Contact info
+            @*@Html.DisplayNameFor(model => model.Phone)*@
+        </th>
+        @*<th>
+                @Html.DisplayNameFor(model => model.Fax)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Email)
+            </th>*@
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.LastName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FirstName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Title)
+            </td>
+            <td>
+                @item.BirthDate.GetValueOrDefault().ToShortDateString()
+                @*@Html.DisplayFor(modelItem => item.BirthDate)*@
+            </td>
+            <td>
+                @item.HireDate.GetValueOrDefault().ToShortDateString()
+                @*@Html.DisplayFor(modelItem => item.HireDate)*@
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Address)<br>
+                @Html.DisplayFor(modelItem => item.City), @Html.DisplayFor(modelItem => item.State), @Html.DisplayFor(modelItem => item.PostalCode)<br>
+                @Html.DisplayFor(modelItem => item.Country)
+            </td>
+            @*<td>
+                    @Html.DisplayFor(modelItem => item.City)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.State)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Country)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.PostalCode)
+                </td>*@
+            <td>
+                Phone: @Html.DisplayFor(modelItem => item.Phone)<br>
+                Fax: @Html.DisplayFor(modelItem => item.Fax)<br>
+                Email: @Html.DisplayFor(modelItem => item.Email)
+            </td>
+            @*<td>
+                    @Html.DisplayFor(modelItem => item.Fax)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Email)
+                </td>*@
+            <td>
+                @*@Html.ActionLink("Edit", "Edit", new { id = item.EmployeeId }) |*@
+                @Html.ActionLink("Details", "Details", new { id = item.EmployeeId }) @*|
+                @Html.ActionLink("Delete", "Delete", new { id = item.EmployeeId })*@
+            </td>
+        </tr>
+    }
+
+</table>
