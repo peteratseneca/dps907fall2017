@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+  <Class Name="AssociationsIntro.Controllers.EmployeeAdd">
+    <Position X="0.5" Y="0.5" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAgCAAAEAIIAAAAAQAACIAAIACAAAAJAAAAAg=</HashCode>
+      <FileName>Controllers\Employee_vm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AssociationsIntro.Controllers.EmployeeBase">
+    <Position X="0.5" Y="4.75" Width="3" />
+    <InheritanceLine Type="AssociationsIntro.Controllers.EmployeeAdd" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="1" Y="4.103" />
+        <Point X="1" Y="4.75" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAA=</HashCode>
+      <FileName>Controllers\Employee_vm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AssociationsIntro.Controllers.EmployeeWithCustomers">
+    <Position X="0.5" Y="7.25" Width="3" />
+    <InheritanceLine Type="AssociationsIntro.Controllers.EmployeeBase" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="0.938" Y="5.983" />
+        <Point X="0.938" Y="7.25" />
+      </Path>
+    </InheritanceLine>
+    <AssociationLine Name="Customers" Type="AssociationsIntro.Controllers.CustomerBase" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="3.188" Y="7.25" />
+        <Point X="3.188" Y="6.68" />
+        <Point X="7.688" Y="6.68" />
+        <Point X="7.688" Y="5.983" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Controllers\Employee_vm.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Customers" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="AssociationsIntro.Controllers.CustomerAdd">
+    <Position X="7.25" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAgCAAAAAIIABAAAAAAAIAAAACAAAAJAAAAAg=</HashCode>
+      <FileName>Controllers\Customer_vm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AssociationsIntro.Controllers.CustomerBase">
+    <Position X="7.25" Y="4.75" Width="2" />
+    <InheritanceLine Type="AssociationsIntro.Controllers.CustomerAdd" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="8.875" Y="3.719" />
+        <Point X="8.875" Y="4.75" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAA=</HashCode>
+      <FileName>Controllers\Customer_vm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AssociationsIntro.Controllers.CustomerWithEmployee">
+    <Position X="7.25" Y="7.25" Width="2" />
+    <InheritanceLine Type="AssociationsIntro.Controllers.CustomerBase" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="8.812" Y="5.983" />
+        <Point X="8.812" Y="7.25" />
+      </Path>
+    </InheritanceLine>
+    <AssociationLine Name="Employee" Type="AssociationsIntro.Controllers.EmployeeBase" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="7.688" Y="7.25" />
+        <Point X="7.688" Y="6.875" />
+        <Point X="3.271" Y="6.875" Type="JumpStart" />
+        <Point X="3.104" Y="6.875" Type="JumpEnd" />
+        <Point X="2.938" Y="6.875" />
+        <Point X="2.938" Y="5.983" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Controllers\Customer_vm.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Employee" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="AssociationsIntro.Controllers.CustomerEditContactInfo">
+    <Position X="7.25" Y="8.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAgCAAAAAAAAAAAAAAAAAAABAAAAAAIAAAAAA=</HashCode>
+      <FileName>Controllers\Customer_vm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AssociationsIntro.Controllers.CustomerEditAddress">
+    <Position X="7.25" Y="11" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAIIAAAAAAAAAIAABACAAAABAAAAAA=</HashCode>
+      <FileName>Controllers\Customer_vm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

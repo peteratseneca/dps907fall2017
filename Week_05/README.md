@@ -14,4 +14,9 @@ Implements a slightly better error-handling mechanism. Will display a friendlier
 
 <br>
 
+### DocumentationIntro
 
+Shows how to enable and use the Web API Help Page feature, for web page documentation.  
+Also, introduces embedded documentation, by using a "root" controller that delivers a collection of "link relations" to the requestor.  
+
+<br>
