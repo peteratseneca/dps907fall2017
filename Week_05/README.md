@@ -20,3 +20,18 @@ Shows how to enable and use the Web API Help Page feature, for web page document
 Also, introduces embedded documentation, by using a "root" controller that delivers a collection of "link relations" to the requestor.  
 
 <br>
+
+### HRIntro
+
+Adds the ability to handle the HTTP OPTIONS method.  
+Introduces hypermedia representations, in an incremental and gentle way.  
+
+<br>
+
+### HttpOptionsHandler
+
+Source code file that implements the HTTP OPTIONS handler.  
+This will become part of the next version of the project template.  
+In the interim, this can be added to any project. Edit the namespace name.  
+
+<br>
