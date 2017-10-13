@@ -2,8 +2,8 @@
 
 <br>
 
-### TBA
+### Media formatter for a hypermedia representation
 
-TBA.  
+(work in progress)
 
-<br>
+Shows a work-in-progress media formatter, which will *deliver* a custom hypermedia representation, for any object or collection.
