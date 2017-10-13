@@ -15,3 +15,9 @@ Copy the zip file to the following folder. Do NOT unzip the file - leave it as-i
 `%userprofile%\Documents\Visual Studio 2017\Templates\ProjectTemplates\Visual C#\Web`
 
 <br>
+
+### Example solutions
+
+If provided, this folder has example solutions for the programming assignments.
+
+<br>
