@@ -1,0 +1,37 @@
+﻿
+            /*
+            // Create an empty returnable collection
+            var c = new List<MSUserAccountBase>();
+
+            // Fetch the user accounts into an in-memory object graph so we can query it
+            // without going back to the data store again and again
+            var allUsers = userManager.Users.ToList();
+
+            // Go through each user account...
+            foreach (var user in allUsers)
+            {
+                // Extract the given name claim
+                var g = "";
+                var cg = user.Claims.SingleOrDefault(u => u.ClaimType == ClaimTypes.GivenName);
+                if (cg != null) { g = cg.ClaimValue; }
+
+                // Extract the surname claim
+                var s = "";
+                var cs = user.Claims.SingleOrDefault(u => u.ClaimType == ClaimTypes.Surname);
+                if (cs != null) { s = cs.ClaimValue; }
+
+                // Create a mapped user
+                var mappedUser = mapper.Map<MSUserAccountBase>(user);
+                // Add the property values
+                //ub.GivenName = cg.ClaimValue;
+                //ub.Surname = cs.ClaimValue;
+                mappedUser.UserName = string.Format("{0} {1}", g, s);
+
+                // Add it to the returnable collection
+                c.Add(mappedUser);
+            }
+
+            return c;
+            */
+
+
