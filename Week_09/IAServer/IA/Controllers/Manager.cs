@@ -111,6 +111,13 @@ namespace IA.Controllers
             claimType = claimType.Trim().ToLower();
             claimValue = claimValue.Trim().ToLower();
 
+            // Special situations for the well-known claims if a short form is submitted
+            claimType = (claimType == "role") ? ClaimTypes.Role : claimType;
+            claimType = (claimType == "name") ? ClaimTypes.Name : claimType;
+            claimType = (claimType == "emailaddress") ? ClaimTypes.Email : claimType;
+            claimType = (claimType == "givenname") ? ClaimTypes.GivenName : claimType;
+            claimType = (claimType == "surname") ? ClaimTypes.Surname : claimType;
+
             // Attempt to fetch the object
             var o = ds.AppClaims
                 .SingleOrDefault(a => a.ClaimType.ToLower() == claimType && a.ClaimValue.ToLower() == claimValue);
