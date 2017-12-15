@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/AssociationsOther.Controllers" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/AssociationsOther.Controllers" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="ArrayOfEmployeeBase">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="EmployeeBase" nillable="true" type="tns:EmployeeBase" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfEmployeeBase" nillable="true" type="tns:ArrayOfEmployeeBase" />
+  <xs:complexType name="EmployeeBase">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:EmployeeAdd">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Id" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="EmployeeBase" nillable="true" type="tns:EmployeeBase" />
+  <xs:complexType name="EmployeeAdd">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="FirstName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LastName" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="EmployeeAdd" nillable="true" type="tns:EmployeeAdd" />
+  <xs:complexType name="EmployeeBase3">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:EmployeeBase2">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="HomeAddress" nillable="true" type="tns:AddressBase" />
+          <xs:element minOccurs="0" name="JobDuties" nillable="true" type="tns:ArrayOfJobDutyBase" />
+          <xs:element minOccurs="0" name="WorkAddress" nillable="true" type="tns:AddressBase" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="EmployeeBase3" nillable="true" type="tns:EmployeeBase3" />
+  <xs:complexType name="EmployeeBase2">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:EmployeeBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="EmployeesSupervised" nillable="true" type="tns:ArrayOfEmployeeBase" />
+          <xs:element minOccurs="0" name="ReportsToEmployee" nillable="true" type="tns:EmployeeBase" />
+          <xs:element minOccurs="0" name="ReportsToEmployeeId" nillable="true" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="EmployeeBase2" nillable="true" type="tns:EmployeeBase2" />
+  <xs:complexType name="AddressBase">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AddressLine1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="AddressLine2" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CityAndProvince" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EmployeeId" type="xs:int" />
+      <xs:element minOccurs="0" name="Id" type="xs:int" />
+      <xs:element minOccurs="0" name="PostalCode" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="AddressBase" nillable="true" type="tns:AddressBase" />
+  <xs:complexType name="ArrayOfJobDutyBase">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="JobDutyBase" nillable="true" type="tns:JobDutyBase" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfJobDutyBase" nillable="true" type="tns:ArrayOfJobDutyBase" />
+  <xs:complexType name="JobDutyBase">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:JobDutyAdd">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Id" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="JobDutyBase" nillable="true" type="tns:JobDutyBase" />
+  <xs:complexType name="JobDutyAdd">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="JobDutyAdd" nillable="true" type="tns:JobDutyAdd" />
+</xs:schema>

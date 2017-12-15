@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="AssociationsOther.Models.Employee">
+    <Position X="2.5" Y="1" Width="2" />
+    <AssociationLine Name="EmployeesSupervised" Type="AssociationsOther.Models.Employee" ManuallyRouted="true">
+      <Path>
+        <Point X="3.209" Y="1" />
+        <Point X="3.209" Y="0.552" />
+        <Point X="3.805" Y="0.552" />
+        <Point X="3.805" Y="1" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-1.671" Y="0.091" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="ReportsToEmployee" Type="AssociationsOther.Models.Employee" ManuallyRouted="true">
+      <Path>
+        <Point X="2.5" Y="1.754" />
+        <Point X="2" Y="1.754" />
+        <Point X="2" Y="2.393" />
+        <Point X="2.5" Y="2.393" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.089" Y="-0.315" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AIACAEAAAAAAAAAAAAEAAAAAABAAEAAAAQAAAAAAAAg=</HashCode>
+      <FileName>Models\DesignModelClasses.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="HomeAddress" />
+      <Property Name="WorkAddress" />
+      <Property Name="ReportsToEmployee" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="JobDuties" />
+      <Property Name="EmployeesSupervised" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="AssociationsOther.Models.Address">
+    <Position X="7.25" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAIAAAAAQACAAAAAAAAAAAAAASAAA=</HashCode>
+      <FileName>Models\DesignModelClasses.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Employee" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="AssociationsOther.Models.JobDuty">
+    <Position X="7.25" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAgAAAAAAAAAAQACAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\DesignModelClasses.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Employees" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
