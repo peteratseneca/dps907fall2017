@@ -4,7 +4,7 @@ Study the "ATTENTION" comment tokens in the code examples, as you also go throug
 
 <br>
 
-### Manager.cs (with HttpClient factory)
+### Manager.cs (with an HttpClient factory)
 
 This is a partially-complete Manager class that you can learn from. 
 
